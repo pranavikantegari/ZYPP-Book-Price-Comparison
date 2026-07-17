@@ -94,3 +94,12 @@ http://localhost/zypp
 - Save users time while shopping.
 - Provide transparent pricing across multiple retailers.
 - Offer direct access to trusted online bookstores.
+
+## 👩‍💻 Author
+
+**Pranavi Kantegari**
+
+B.Tech – Computer Science & Engineering (AI & ML)
+
+LinkedIn:
+https://www.linkedin.com/in/pranavikantegari/
