@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Dependency folders (if you add Composer or Node later)
+vendor/
+node_modules/
+
+# Environment files
+.env
+
+# XAMPP temp/cache (if ever created)
+tmp/
+cache/

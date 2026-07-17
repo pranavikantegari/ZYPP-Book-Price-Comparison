@@ -1,0 +1,351 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:
+    linear-gradient(
+        180deg,
+        #eef2ff 0%,
+        #f8f9ff 40%,
+        #f4f6fb 100%
+    );
+    color:#333;
+    min-height:100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    color:white;
+    padding:20px;
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.15);
+}
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+header h1{
+    color:#FFD369;
+    font-size:3rem;
+    font-weight:900;
+    letter-spacing:4px;
+    text-shadow:
+        0 0 10px rgba(255,211,105,0.6),
+        0 0 20px rgba(255,211,105,0.4),
+        0 0 40px rgba(255,211,105,0.2);
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+nav a,.logout-button{
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:10px;
+    transition:all 0.3s ease;
+}
+
+nav a:hover,.logout-button:hover{
+    background:
+        rgba(255,255,255,0.15);
+    transform:
+        translateY(-2px);
+}
+
+/* =========================
+   LOGOUT BUTTON
+========================= */
+
+.logout-button{
+    background:#ff5e62;
+    border:none;
+    cursor:pointer;
+}
+
+/* =========================
+   CART LINK
+========================= */
+
+.cart-link{
+    display:flex;
+    align-items:center;
+}
+
+.cart-icon{
+    width:24px;
+    height:24px;
+    margin-right:5px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section{
+    text-align:center;
+    margin:40px auto;
+    max-width:900px;
+    background:
+        rgba(255,255,255,0.55);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:50px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+.hero-section h2{
+    font-size:2.8rem;
+    color:#2c3e50;
+    margin-bottom:15px;
+}
+
+.hero-section p{
+    font-size:1.2rem;
+    color:#666;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-container{
+    padding:40px;
+}
+
+main h2{
+    text-align:center;
+    font-size:2.2rem;
+    color:#2c3e50;
+    margin-bottom:40px;
+    position:relative;
+}
+
+main h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    margin:12px auto;
+    border-radius:10px;
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.product-list{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 260px));
+    justify-content:center;
+    gap:25px;
+}
+
+/* =========================
+   IMAGE CONTAINER
+========================= */
+
+.image-container{
+    height:220px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    margin-bottom:10px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product{
+    background:
+        rgba(255,255,255,0.92);
+    backdrop-filter:blur(10px);
+    border:
+        1px solid rgba(255,255,255,0.5);
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+    overflow:hidden;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+    display:flex;
+    flex-direction:column;
+    height:500px;
+}
+
+.product:hover{
+    transform:
+        translateY(-10px)
+        scale(1.02);
+    box-shadow:
+        0 20px 40px
+        rgba(102,126,234,0.15);
+}
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product-image{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    transition:transform 0.4s ease;
+}
+
+.product:hover .product-image{
+    transform:scale(1.08);
+}
+
+/* =========================
+   PRODUCT TITLE
+========================= */
+
+.product h3{
+    margin-top:15px;
+    color:#2c3e50;
+    font-size:1.3rem;
+    min-height:60px;
+}
+
+/* =========================
+   PRODUCT DESCRIPTION
+========================= */
+
+.product p{
+    color:#666;
+    margin:10px 0;
+    line-height:1.5;
+}
+.product p:last-of-type{
+    min-height:70px;
+    overflow:hidden;
+}
+
+/* =========================
+   PRICE
+========================= */
+
+.product p:first-of-type{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#27ae60;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.add-to-cart-button{
+    margin-top:auto;
+    background:
+        linear-gradient(
+            135deg,
+            #ff9966,
+            #ff5e62
+        );
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.add-to-cart-button:hover{
+    transform:
+        translateY(-3px);
+    box-shadow:
+        0 10px 20px
+        rgba(255,94,98,0.35);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+    .header-container{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    header h1{
+        font-size:2.3rem;
+    }
+
+    .hero-section{
+        margin:20px;
+        padding:30px;
+    }
+
+    .hero-section h2{
+        font-size:2rem;
+    }
+}
